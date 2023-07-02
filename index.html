@@ -3,73 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Encriptador</title>
     
 </head>
 <body>
-        <form >
-            <input type="text" id="texto" pattern="[a-z]+" required>
-            <button onclick="encriptar()">Encriptar</button>
-            <button onclick="desencriptar()">Desencriptar</button>
-            <p id="info"></p>
-        </form>
+    <img src="./assets/Logo.png" />
+    <textarea class="texto" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+    <textarea class="mensaje" cols="20" rows="10"></textarea>
+    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
 
-        <script>
-            function encriptar(){
-                var texto1 = document.getElementById("texto").value;
-                validar(texto1);
-                let separar = texto1.split("");
-                console.log(separar);
-                for(let i=0; i<=separar.length;i++){
-                    if(separar[i] == 'e'){
-                        separar[i]='enter';
-                    }
-                    if(separar[i] == 'i'){
-                        separar[i]='imes';
-                    }
-                    if(separar[i] == 'a'){
-                        separar[i]='ai';
-                    }
-                    if(separar[i] == 'o'){
-                        separar[i]='ober';
-                    }
-                    if(separar[i] == 'u'){
-                        separar[i]='ufat';
-                    }
-                } 
-                let infoo = document.getElementById('info');
-                infoo.innerHTML = separar.join("");
-                //console.log(separar.join(""));          
-            }
-            
-            function desencriptar(){
-                var texto1 = document.getElementById("texto").value;
-                let separar = texto1.split("");
-                console.log(separar);
-                for(let i=0; i<=separar.length;i++){
-                    if(separar[i] == 'e' && separar[i+1] == 'n' && separar[i+2] == 't' && separar[i+3] == 'e' && separar[i+4] == 'r'){
-                        separar.splice(i+1,4);
-                    }
-                    if(separar[i] == 'i' && separar[i+1] == 'm' && separar[i+2] == 'e' && separar[i+3] == 's'){
-                        separar.splice(i+1,3);
-                    }
-                    if(separar[i] == 'a' && separar[i+1] == 'i'){
-                        separar.splice(i+1,1);
-                    }
-                    if(separar[i] == 'o' && separar[i+1] == 'b' && separar[i+2] == 'e' && separar[i+3] == 'r'){
-                        separar.splice(i+1,3);
-                    }
-                    if(separar[i] == 'u' && separar[i+1] == 'f' && separar[i+2] == 'a' && separar[i+3] == 't'){
-                        separar.splice(i+1,3);
-                    }
-                    let infoo = document.getElementById('info');
-                    infoo.innerHTML = separar.join("");
-                } 
-                //console.log(separar.join(""));        
-            }
-
-            
-        </script>
+<script src="./index.js"></script>
 </body>
 
 </html>
