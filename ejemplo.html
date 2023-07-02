@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guardar valor de input de texto en una variable</title>
+</head>
+<body>
+  <input type="text" id="miInputTexto" pattern="[a-z]" required>
+  <!-- <button onclick="guardarTexto()">Guardar</button> -->
+  <button>Guardar</button>
+
+  <script>
+    function guardarTexto() {
+      // Obtén el valor del input de texto
+      var texto = document.getElementById("miInputTexto").value;
+      
+      // Imprime el valor en la consola
+      console.log(texto);
+    }
+  </script>
+</body>
+</html>
