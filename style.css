@@ -1,0 +1,57 @@
+.textoAltura {
+    height: 70vh;
+
+}
+
+.textAreaMargin {
+    margin-top: 65px !important;
+
+}
+
+.texto::placeholder {
+    color: darkblue !important;
+
+}
+
+.texto {
+    background-color: #D8DFE8 !important;
+}
+
+.imagen {
+    margin-top: 15px;
+}
+
+.mensajeMargin {
+    margin-top: 30px !important;
+}
+
+.colorFondo {
+    background-color: #D8DFE8;
+}
+
+.btn-desencriptar {
+    background-color: #D8DFE8;
+}
+
+.btn-1, .btn-2{
+    background-color: #0A3871;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 2% 14.788%;
+}
+.btn-1.custom-button:hover {
+        background-color: #094f96;
+    }
+
+.btn-2.sinFondo{
+    background-color: #D8DFE8;
+    border: solid;
+    border-color: darkblue;
+    border-width: 1px;
+    color: darkblue;
+    padding: 2% 12%;
+}
