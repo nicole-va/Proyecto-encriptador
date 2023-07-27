@@ -77,3 +77,18 @@ span{
     color: #495057;
     font-size: small;
 }
+
+.copiar {
+    padding: 10px 20px;
+    border-color: #0A3871;
+    border-radius: 14px;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 2% 13.788%;
+    background-color: inherit;
+}
+
+.centrarCopiar{
+    display: flex;
+    justify-content: center;
+}
