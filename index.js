@@ -63,6 +63,7 @@ function btnEncriptar(){
     if(!validarTexto()) {
         const textoEncriptado = encriptar(textArea.value)
         mensaje.value = textoEncriptado;
+        mensaje.style.backgroundImage = "none"
         textArea.value = "";
     }
 }   
@@ -70,6 +71,7 @@ function btnEncriptar(){
 function btnDesencriptar(){
     const textoEncriptado = desencriptar(textArea.value)
     mensaje.value = textoEncriptado;
+    mensaje.style.backgroundImage = "none"
     textArea.value = "";
     
 }

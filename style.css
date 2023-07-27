@@ -1,5 +1,5 @@
 .textoAltura {
-    height: 70vh;
+    height: 65vh;
 
 }
 
@@ -41,7 +41,7 @@
     border-radius: 14px;
     font-size: 16px;
     cursor: pointer;
-    padding: 2% 14.788%;
+    padding: 2% 13.788%;
 }
 .btn-1.custom-button:hover {
         background-color: #094f96;
@@ -53,5 +53,27 @@
     border-color: darkblue;
     border-width: 1px;
     color: darkblue;
-    padding: 2% 12%;
+    padding: 2% 11%;
+}
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 3%;
+}
+
+.mensaje{
+    height: 85vh !important;
+    background-image: url("./assets/Group8.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.mensaje:focus {
+    outline: none;
+}
+
+span{
+    color: #495057;
+    font-size: small;
 }
